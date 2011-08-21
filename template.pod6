@@ -1,0 +1,112 @@
+=for DESCRIPTION :title('presentation template in Perl 6 Pod format')
+= :author('Aliaksanr Zahatski') :pubdate('2011')
+
+=config Image :width('2in')
+
+=begin Slide :title('Кто я')
+
+http://search.cpan.org/$\sim$zag/
+
+lang/rakudo  ( FreeBSD )
+
+книга "Все о Perl 6"
+
+=end Slide
+
+
+=begin Slide :title('Content')
+ 
+key moments:
+ 
+=item features
+=item implementations
+=item usage
+ 
+=end Slide
+
+=begin Slide :title('Code samples')
+
+:lang('Perl')
+
+=for code :lang('Perl')
+ my @keys = <a b c d e>;
+ my @vals = ^5;
+ my %hash = @keys Z @vals;
+
+:lang('JavaScript')
+
+=begin code :lang('JavaScript')
+ var keys = ['a', 'b', 'c'];
+ var values = [1, 2, 3];
+ var map = {}; //this is a comment
+ for(var i in keys) {
+  map[ keys[i] ] = values[i];
+ }
+=end code
+=end Slide
+
+
+=begin Slide :title('Pause demo')
+ Now :
+=Pause
+=for item :numbered
+Lists
+=for item :numbered :pause
+Tables
+=for item :numbered
+Headers
+=end Slide
+
+=begin Slide :title('Raw =Latex')
+
+=begin code
+ =Latex
+ \[
+   \Gamma_0 S_0 (1-\alpha)^2 = k_d \alpha^2
+   \quad \Rightarrow \quad
+   \Bigl(\frac{1-\alpha}{\alpha}\Bigr)^2 = \frac{k_d}{\Gamma_0 S_0}
+ \]
+=end code
+
+would be rendered:
+
+=Latex
+ \[
+   \Gamma_0 S_0 (1-\alpha)^2 = k_d \alpha^2
+   \quad \Rightarrow \quad
+   \Bigl(\frac{1-\alpha}{\alpha}\Bigr)^2 = \frac{k_d}{\Gamma_0 S_0}
+ \]
+
+=end Slide
+
+=begin Slide :title('insert vectors')
+
+=item eps -> pdf
+
+  epstopdf ./i/blocks.eps  -o=blocks.pdf
+
+=item then:
+
+    =for Image :width('3in')
+    blocks.pdf
+
+Result:
+=for Image :width('3in')
+blocks.pdf
+
+
+=end Slide
+
+=begin Slide  :title('questions ?')
+=for Image :width('2in')
+i/q2.jpg
+
+
+=item B<S26 - Documentation>
+https://raw.github.com/perl6/specs/master/S26-documentation.pod
+
+
+=item B<home page, mail>
+http://zag.ru, zag(at)cpan.org
+
+=end Slide
