@@ -3,13 +3,13 @@
 
 =config Image :width('2in')
 
-=begin Slide :title('Кто я')
+=begin Slide :title('About me')
 
 http://search.cpan.org/$\sim$zag/
 
 lang/rakudo  ( FreeBSD )
 
-книга "Все о Perl 6"
+Russian book "Everything about Perl 6" 
 
 =end Slide
 
